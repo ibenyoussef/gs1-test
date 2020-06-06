@@ -1,0 +1,28 @@
+<form [formGroup]="contactFormGroup" 
+(submit)="onSubmit()">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputName">Nom</label>
+      <input type="text" class="form-control" id="inputName" formControlName="name" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputLastName">Prénom</label>
+      <input type="text" class="form-control" id="inputLastName" formControlName="lastName" />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" formControlName="email"/>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputdob">date de naissance</label>
+      <input type="date" class="form-control" id="inputdob" formControlName="dateOfBirdh" />
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2" [disabled]="contactFormGroup.invalid">Ajouter</button>
+    </div>
+
+  </div>
+  <pre>next id: {{_nextid}}</pre>
+</form>

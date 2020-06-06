@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+main {
+  .container {
+    margin-top: 70px;
+  }
+}
+
+.form-control.ng-touched.ng-invalid {
+  border-color: #dc3545;
+}
+
+.custom-control-input.ng-invalid.ng-touched + label.custom-control-label {
+  color: #dc3545;
+}
